@@ -11,20 +11,20 @@ print "please enter a hexadecimal number without a leading 0X: ";
 $val3 = <STDIN>;
 
 # convert each number to decimal
-$val1 = $val1 + 0.0;
-$val2 = $val2 + 00;
-$val3 = $val3 + 0X0;
+$val1 = int $val1;
+$val2 = oct $val2;
+$val3 = hex $val3;
 
 # print each number as follows:
 # - print 1st number decimal value
 # - print 2nd number as octal value and decimal value
 # - print 3rd number as hex value and decimal value
 
-print $val1;
+print sprintf("%d", $val1);
 print "\n";
 
-print $val2;
+print sprintf("%o %d", $val2, $val2);
 print "\n";
 
-print $val3;
+print sprintf("%x %d", $val3, $val3);
 print "\n";
