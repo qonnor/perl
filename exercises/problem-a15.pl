@@ -1,15 +1,31 @@
-#!usr/bin/perl
+#!/usr/bin/perl
 
 use warnings;
 
-1 = "January"
+@months = (
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+);
 
-2 = "February"
+# ask user to input a number between 1-12
+PRINT: print "Please enter a number between 1-12: \n";
+chomp($input = <STDIN>);
 
-3 = "March"
+$month = $input - 1;
+if ($month < 0 || $month >=12) {
+  print "not a valid number: ", $input, "\n";
+  goto PRINT;
+}
 
-4 = "April"
+print "Month #", $input, " is: ", @months[$month], "\n";
 
-5 = "May"
-
-6 = "
