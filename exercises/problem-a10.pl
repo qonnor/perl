@@ -1,3 +1,7 @@
+#!/usr/bin/perl
+
+use warnings;
+
 # ask user to input a decimal number
 print "please enter a decimal number: ";
 $val1 = <STDIN>;
@@ -11,7 +15,7 @@ print "please enter a hexadecimal number without a leading 0X: ";
 $val3 = <STDIN>;
 
 # convert each number to decimal
-$val1 = int $val1;
+$val1 = $val1 + 0.0;
 $val2 = oct $val2;
 $val3 = hex $val3;
 
