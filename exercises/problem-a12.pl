@@ -11,17 +11,18 @@ $offset = 0;
 $search = "e";
 
 print "Displaying the positions of 'e' in the sentence you entered:\n";
+print $input, "\n";
 
 for ($i = 0; $i < $max; $i++) {
-  $index = index($input, $search, $offset);
+  $offset = index($input, $search, $offset);
 
-  if ($index == -1) {
+  if ($offset == -1) {
     last;
   }
 
-  print $index, "\n";
+  print $offset, "\n";
 
-  $offset = $index + 1;
+  $offset += 1;
 }
 
 
