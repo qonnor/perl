@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+use warnings;
+#changing separator to create a space between values during print
+$, = " ";
+
+@names = ('Joe', 'Fred', 'Mary');
+print 'Hello';
+print @names;
+print "\n";

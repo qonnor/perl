@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+
+use warnings;
+
+@c = ( 5, 16, 128);
+splice (@c, 2);	
+print @c;
+

@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+use warnings;
+
+@a = <STDIN>;
+
+$a[o] "Hello there\n";
+$a[i] "How are you doing\n";
+
+chomp @a;
+
