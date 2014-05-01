@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+
+use warnings;
+
+for ($i = 0; $i <@array; $i++)
+{
+process $array [$i]
+}

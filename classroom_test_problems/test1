@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+
+use warnings;
+
+$MAX = 100;
+$num = 2;
+
+while ($num < $MAX)
+{
+print ($num, "\n");
+$num **= 2
+}
+
