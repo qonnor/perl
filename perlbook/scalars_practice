@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+$a = 5 * 5;
+print "Five times five is: ", $a, "\n";
+
+$b = 7 + 5;
+print "Seven plus five is: ", $b, "\n";
