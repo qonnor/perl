@@ -3,22 +3,46 @@
 use strict;
 use warnings;
 
+my $digits = "0123456789";
 
-print "Please enter a sequence of numbers or letters: ";
-chomp($input = <STDIN>);
-$max = 20;
-$offset = (a .. z);
+my $continue = 1;
 
-for ($input <= $max) {
+while ($continue) {
+	print
+	"Please enter a sequence of numbers and/or letters.\,",
+	" -Use a space between all numbers and letters.\n",
+	" -Valid number values are 1-20.\n",
+	"sequence: ";
+chomp(my $input = <STDIN>);
 
+#lc input to bring input in lowercase form
 
-
-
-@count = (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20); 
-
-$add = $input ++;
-
-while ($input == @count)  
-{
-print "The sum of this input is: $add\n";
+my $lower = lc $input;
+my $q = index $lower, 'q';
+if ($q > -1) {
+$input = substr $input, 0, $q;
 }
+
+# No arrays allowed
+
+my $values = split(' ', $input);
+
+#need to take input from user and save into variable
+#need to make cut out non-valid input and find sum
+
+my $sum = 0;
+for(my $i = 0; $i < $count; i++) {
+$sum += #whatever variable/non array i use to hold values
+print #said variable
+
+if ($i < $count -1) {
+print " + ";
+} else {
+print " = ";
+}
+
+} 
+print $sum, "\n";
+
+
+
