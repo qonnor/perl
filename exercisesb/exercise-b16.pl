@@ -25,16 +25,16 @@ $input = substr $input, 0, $q;
 
 # No arrays allowed
 
-my $values = split(' ', $input);
+my $values = $input;
 
 #need to take input from user and save into variable
 #need to make cut out non-valid input and find sum
 
 my $sum = 0;
 for(my $i = 0; $i < $count; i++) {
-$sum += #whatever variable/non array i use to hold values
-print #said variable
-
+$sum += $values;
+print $sum;
+}
 if ($i < $count -1) {
 print " + ";
 } else {

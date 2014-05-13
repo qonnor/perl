@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+
+use warnings;
+
+@a = sort (3,4,9,11,23);
+	print "@a";
+
+@b = sort ("a", 5, "Z");
+	print "@b";

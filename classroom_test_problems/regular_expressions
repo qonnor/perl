@@ -1,0 +1,11 @@
+#!usr/bin/perl
+
+use warnings;
+
+#grep -F  no special meaning
+
+#grep -B limited special meaning
+
+#grep -E extended special meaning
+
+#grep -P perl regular expressions

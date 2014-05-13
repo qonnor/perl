@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+
+use warnings;
+
+#atom
+
+# - single character
+
+# - dot
+
+# - anchor
+
+# - back reference
+

@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+
+use warnings;
+
+%B = ("Joe", 3.14,
+	"Fred", 1.414,
+	"Jack", 5.4,
+	"Mary", 5,
+	 );
+print "@B{'Jack', 'Joe'}";
+
+print ($value, "\t")foreach
+$value(values, %B);	
